@@ -1,0 +1,19 @@
+class Node{
+          int data;
+          Node * next;
+          
+          Node(int d){
+          this->data=d;
+          this->next= NULL;
+          }
+ 
+}
+
+
+void InsertAtFirstLL(Node * head, int x){
+
+       Node * temp=new Node(x);
+       temp->next= head;
+       head=temp;
+
+}
